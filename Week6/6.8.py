@@ -10,5 +10,7 @@ for i in range(1,n+1):
     if i%2 == 0:
         sum -= 1/(2*i - 1)
 #sum=int(sum*10000)/10000
-if n==1
-print("%.4f%%sum)
+if n==1:
+    print("1.0")
+else:
+    print('%.4f'% sum)
