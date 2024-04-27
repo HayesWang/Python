@@ -17,4 +17,4 @@ for i in range(firstletter,lastletter+1):
     if a[i] != " ":
         print(a[i],end="")
 for i in range(lastletter+1,len(a)):
-    print(a[i])
+    print(a[i],end="")
