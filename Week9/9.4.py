@@ -4,3 +4,23 @@
 
 # 输入：正整数m,n,    m,n>1.
 # 输出：[m,n]中的孪生的数量
+import math
+
+def sushu(x):
+    if (x <= 1):
+        return False
+    if (x == 2):
+        return True
+    if (x%2 == 0):
+        return False
+    for i in range(3,int(math.sqrt(x))+1,2):
+        if (x%i == 0):
+            return False
+    return True
+
+m , n = map(int,input().split(" "))
+ctr = 0
+for i in range(m,n+1):
+    if (sushu(i-2) and sushu(i)):
+        ctr+=1
+print(ctr)
